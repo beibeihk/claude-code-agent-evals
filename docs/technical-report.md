@@ -75,6 +75,29 @@ peak memory, and warm local filesystem observations are not deployment-wide guar
 No fabricated sub-millisecond hook claim is made. Synchronous recording adds real
 latency; async teardown loss was judged worse for this evidence recorder.
 
+| Events | Mean append + fsync | p95      | Journal bytes | Report generation | End RSS           |
+| ------ | ------------------- | -------- | ------------- | ----------------- | ----------------- |
+| 1,000  | 17.11 ms            | 23.27 ms | 575,893       | 31.86 ms          | 81,920,000 bytes  |
+| 10,000 | 18.60 ms            | 27.03 ms | 5,768,894     | 203.49 ms         | 127,664,128 bytes |
+
+The 100 full hook subprocess samples measured p50 **146.89 ms**, p95 **202.24 ms**,
+mean **153.58 ms**. This overhead is material and is a v1 limitation; it is neither
+Claude API latency nor an incremental speedup claim. Linux/Windows/macOS CI passes
+31 tests and checks reproducible bundles. The first macOS run exposed a standard
+temporary-directory symlink in test fixtures; fixtures/benchmark resolve that
+trusted OS location while user-data symlink rejection remains enforced.
+
+The 20-task batch contains 293 public hook events and 106 tool invocations (see the
+machine record for authoritative counts). It reports the tested candidate's bundle
+hash separately from the release build. Follow-up fixes for skill data-directory
+selection and Windows path spelling have regressions and actual released-build
+skill tests. Reports produced during an active command naturally contain an
+unpaired in-flight call; later completion is appended rather than invented.
+
+An [upstream audit](upstream-research.md) reproduces three Action failures with
+offline fixtures. Their existing PRs preclude an original contribution at this time;
+no upstream merge or authored fix is claimed.
+
 ## False positives and limitations
 
 Repetition and long tools can be intentional. A red test can be a successful

@@ -122,6 +122,16 @@ report/eval case → 可选解释。详见 [architecture](docs/architecture.md)�
 实际测量及验证状态见 [技术报告](docs/technical-report.md)。合成规则符合性不等同自然任务准确率。
 人工 precision/误报率需要人工审阅标签；未审阅字段保留 null，不声称 recall。
 
+发布证据：**31 项测试通过**，Linux/Windows/macOS CI 与官方 manifest 检查通过，
+已实际安装和卸载 marketplace 插件。Claude Code 2.1.288 + Kimi Coding
+（`kimi-for-coding`）完成 **20/20 个独立测试通过的修复任务**，并实际调用 report/status
+技能。人工标注为 **0**，按用户选择暂缓。所测 Windows 机器上，包含 Node 启动和
+本地文件操作的完整 hook 子进程 p50/p95 为 **146.9/202.2 ms**。
+
+见 [终端演示](examples/demo.cast)（[文本](examples/demo.txt)）、
+[真实任务记录](docs/evaluation/real-tasks.json) 与 [上游研究](docs/upstream-research.md)。
+已复现三个 Action 问题；因已有修复 PR，本次没有提交重复贡献。
+
 ## Limitations
 
 - Hooks 只提供部分证据；语义正确性和目标偏离需要独立标签。

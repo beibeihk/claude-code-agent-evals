@@ -140,6 +140,18 @@ reproducible. Actual measurements and validation status are recorded in
 not natural-task accuracy. Human precision/false-positive rate require a reviewed
 label set; unreviewed fields remain null. Recall is not claimed.
 
+Release evidence: **31 passing tests**, Linux/Windows/macOS CI, official manifest
+checks, actual marketplace install/uninstall, **20/20 independently passing coding
+repairs** with Claude Code 2.1.288 and Kimi Coding (`kimi-for-coding`), plus real
+report/status skill invocations. Human annotations: **0**, explicitly deferred.
+On the measured Windows machine, full hook subprocess p50/p95 was **146.9/202.2 ms**;
+this includes Node startup and local filesystem work.
+
+See the [terminal demo](examples/demo.cast) ([transcript](examples/demo.txt)),
+[real-task record](docs/evaluation/real-tasks.json) and
+[upstream audit](docs/upstream-research.md). Three Action failures were reproduced;
+existing repair PRs prevented a non-duplicate upstream submission.
+
 ## Limitations
 
 - Public hooks are incomplete evidence; goal drift and semantic correctness need independent labels.
