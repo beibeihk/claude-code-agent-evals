@@ -1,0 +1,36 @@
+{
+  "measured_at": "2026-10-03T11:44:26.192Z",
+  "node": "v24.12.0",
+  "os": "win32 10.0.26200 x64",
+  "method": "Warm local journal append + fsync. Separate process sample includes Node startup. No Claude tool/API time. RSS is process RSS at end, not peak memory.",
+  "results": [
+    {
+      "events": 1000,
+      "event_processing_total_ms": 17108.8039,
+      "event_processing_mean_ms": 17.108803899999998,
+      "event_processing_p50_ms": 16.926699999999983,
+      "event_processing_p95_ms": 23.26520000000005,
+      "disk_bytes": 575893,
+      "report_generation_ms": 31.8624000000018,
+      "html_bytes": 176631,
+      "rss_bytes": 81920000
+    },
+    {
+      "events": 10000,
+      "event_processing_total_ms": 186030.595,
+      "event_processing_mean_ms": 18.6030595,
+      "event_processing_p50_ms": 17.617900000012014,
+      "event_processing_p95_ms": 27.034400000004098,
+      "disk_bytes": 5768894,
+      "report_generation_ms": 203.49079999999958,
+      "html_bytes": 1751638,
+      "rss_bytes": 127664128
+    }
+  ],
+  "hook_subprocess": {
+    "samples": 100,
+    "p50_ms": 146.8908999999985,
+    "p95_ms": 202.24169999998412,
+    "mean_ms": 153.58376999999862
+  }
+}

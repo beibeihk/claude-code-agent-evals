@@ -1,0 +1,492 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "observable_agent_eval_case",
+  "task": {
+    "session_id": "4581123141ff268dea431c72a2b1446c",
+    "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+    "description": "Not captured in metadata-only mode"
+  },
+  "events": [
+    {
+      "schema_version": "1.0.0",
+      "seq": 1,
+      "timestamp": "2026-10-03T11:25:50.597Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "SessionStart",
+      "event_type": "session",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 4,
+        "output_bytes": 4,
+        "source": "startup"
+      }
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 2,
+      "timestamp": "2026-10-03T11:25:50.861Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "UserPromptSubmit",
+      "event_type": "prompt",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 365,
+        "output_bytes": 4
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b"
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 3,
+      "timestamp": "2026-10-03T11:25:54.542Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PreToolUse",
+      "event_type": "tool_call",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 139,
+        "output_bytes": 4,
+        "input_hash": "23b06bc2d2956be72ca604acc959e1a749620113c3f4ba9198164ee9479ca1bd",
+        "file_id": "5eeeae6b662a5e817ca3a07097150ece",
+        "file_kind": "source"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Read",
+      "correlation_id": "f53c32fb4a2890f6d091915f9cea58fa"
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 4,
+      "timestamp": "2026-10-03T11:25:54.547Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PreToolUse",
+      "event_type": "tool_call",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 135,
+        "output_bytes": 4,
+        "input_hash": "9d2f8b8de5f7ad7d414c85d4729c1538327e409ca10cff9281ee6e2839689b7b",
+        "file_id": "6b6732c6e8262a67e6023a53135bb012",
+        "file_kind": "source"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Read",
+      "correlation_id": "36974fd035b267887c5d8d6dd36a64d7"
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 5,
+      "timestamp": "2026-10-03T11:25:54.992Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PostToolUse",
+      "event_type": "tool_result",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 135,
+        "output_bytes": 447,
+        "input_hash": "9d2f8b8de5f7ad7d414c85d4729c1538327e409ca10cff9281ee6e2839689b7b",
+        "output_hash": "dd9d50ec18c2987dd95e3ec4335615ce4794257b3105f968badb6ae2dab9d794",
+        "file_id": "6b6732c6e8262a67e6023a53135bb012",
+        "file_kind": "source"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Read",
+      "correlation_id": "36974fd035b267887c5d8d6dd36a64d7",
+      "outcome": "success",
+      "duration_ms": 30
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 6,
+      "timestamp": "2026-10-03T11:25:55.006Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PostToolUse",
+      "event_type": "tool_result",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 139,
+        "output_bytes": 267,
+        "input_hash": "23b06bc2d2956be72ca604acc959e1a749620113c3f4ba9198164ee9479ca1bd",
+        "output_hash": "3afad9e3a9d615749f6bbd1c8f2c134d0e49b7573dd32fca4941c398a4d07ef3",
+        "file_id": "5eeeae6b662a5e817ca3a07097150ece",
+        "file_kind": "source"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Read",
+      "correlation_id": "f53c32fb4a2890f6d091915f9cea58fa",
+      "outcome": "success",
+      "duration_ms": 82
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 7,
+      "timestamp": "2026-10-03T11:25:58.149Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PreToolUse",
+      "event_type": "tool_call",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 191,
+        "output_bytes": 4,
+        "input_hash": "292b416f9aa01675f9a79a7a2b449fc03b21fe10c8bd9d8b819913cce09cad45",
+        "verification": "test",
+        "verification_scope": "cd_prefix",
+        "verification_outcome": "unknown"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Bash",
+      "correlation_id": "f364be377a31fa49b6af2e3f41133d45"
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 8,
+      "timestamp": "2026-10-03T11:26:00.591Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PostToolUseFailure",
+      "event_type": "tool_result",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 191,
+        "output_bytes": 996,
+        "input_hash": "292b416f9aa01675f9a79a7a2b449fc03b21fe10c8bd9d8b819913cce09cad45",
+        "error_hash": "a5cf99374787b33766bcc98afb8fca8079c3853bf5572f35d401c1fa5a3a64c9",
+        "error_category": "nonzero_exit",
+        "exit_code": 1,
+        "verification": "test",
+        "verification_scope": "cd_prefix",
+        "verification_outcome": "unknown"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Bash",
+      "correlation_id": "f364be377a31fa49b6af2e3f41133d45",
+      "outcome": "failure",
+      "duration_ms": 2188
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 9,
+      "timestamp": "2026-10-03T11:26:05.248Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PreToolUse",
+      "event_type": "tool_call",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 299,
+        "output_bytes": 4,
+        "input_hash": "e70ffd6a3c25906c4fc06a3e1c17e510b4d2f3b963ce49d15835982abcab923a",
+        "file_id": "5eeeae6b662a5e817ca3a07097150ece",
+        "file_kind": "source",
+        "old_hash": "2d7a79eadb1c54ed0f5bdbbed7ff86ce91296d85266c9bd08146d9a9853a29b2",
+        "new_hash": "131f5414aafb1da2c2bac68e786f7b1ef9ebf5af6f58248f0215ffa4720833fd"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Edit",
+      "correlation_id": "0b3b12fc5537bb3f33073bfcc5e41d86"
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 10,
+      "timestamp": "2026-10-03T11:26:05.552Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PostToolUse",
+      "event_type": "tool_result",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 299,
+        "output_bytes": 585,
+        "input_hash": "e70ffd6a3c25906c4fc06a3e1c17e510b4d2f3b963ce49d15835982abcab923a",
+        "output_hash": "13baa5132a4499955b3c7a17e99bd7979d4ffa87baf94c16c80b74c29f8201f8",
+        "file_id": "5eeeae6b662a5e817ca3a07097150ece",
+        "file_kind": "source",
+        "old_hash": "2d7a79eadb1c54ed0f5bdbbed7ff86ce91296d85266c9bd08146d9a9853a29b2",
+        "new_hash": "131f5414aafb1da2c2bac68e786f7b1ef9ebf5af6f58248f0215ffa4720833fd"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Edit",
+      "correlation_id": "0b3b12fc5537bb3f33073bfcc5e41d86",
+      "outcome": "success",
+      "duration_ms": 18
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 11,
+      "timestamp": "2026-10-03T11:26:09.515Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PreToolUse",
+      "event_type": "tool_call",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 190,
+        "output_bytes": 4,
+        "input_hash": "292b416f9aa01675f9a79a7a2b449fc03b21fe10c8bd9d8b819913cce09cad45",
+        "verification": "test",
+        "verification_scope": "cd_prefix",
+        "verification_outcome": "unknown"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Bash",
+      "correlation_id": "80e774845ce669f7309998602d4857c4"
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 12,
+      "timestamp": "2026-10-03T11:26:10.358Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PostToolUseFailure",
+      "event_type": "tool_result",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 190,
+        "output_bytes": 1147,
+        "input_hash": "292b416f9aa01675f9a79a7a2b449fc03b21fe10c8bd9d8b819913cce09cad45",
+        "error_hash": "c47e1a587a7c5b9125d0c0a7416fad1b123b0ddb5930d71a827c156a2aa9eccc",
+        "error_category": "nonzero_exit",
+        "exit_code": 1,
+        "verification": "test",
+        "verification_scope": "cd_prefix",
+        "verification_outcome": "unknown"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Bash",
+      "correlation_id": "80e774845ce669f7309998602d4857c4",
+      "outcome": "failure",
+      "duration_ms": 543
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 13,
+      "timestamp": "2026-10-03T11:26:15.558Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PreToolUse",
+      "event_type": "tool_call",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 321,
+        "output_bytes": 4,
+        "input_hash": "1d6f3541934ec6c955f34e07c3d2f205d724cc2d75a1de4c2bb2bf60aa7c3da3",
+        "file_id": "5eeeae6b662a5e817ca3a07097150ece",
+        "file_kind": "source",
+        "old_hash": "131f5414aafb1da2c2bac68e786f7b1ef9ebf5af6f58248f0215ffa4720833fd",
+        "new_hash": "c6292d3c8369295552615349946b261ec8b7f5aec41d3b45a0358a0ef874223b"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Edit",
+      "correlation_id": "a5de8d6c9b64486c2ea983f5b05cc16d"
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 14,
+      "timestamp": "2026-10-03T11:26:15.863Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PostToolUse",
+      "event_type": "tool_result",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 321,
+        "output_bytes": 639,
+        "input_hash": "1d6f3541934ec6c955f34e07c3d2f205d724cc2d75a1de4c2bb2bf60aa7c3da3",
+        "output_hash": "64ba695ad85d237173bf865dfe18900167be19c5e462dc8f2fcbd164fd318bfa",
+        "file_id": "5eeeae6b662a5e817ca3a07097150ece",
+        "file_kind": "source",
+        "old_hash": "131f5414aafb1da2c2bac68e786f7b1ef9ebf5af6f58248f0215ffa4720833fd",
+        "new_hash": "c6292d3c8369295552615349946b261ec8b7f5aec41d3b45a0358a0ef874223b"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Edit",
+      "correlation_id": "a5de8d6c9b64486c2ea983f5b05cc16d",
+      "outcome": "success",
+      "duration_ms": 16
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 15,
+      "timestamp": "2026-10-03T11:26:19.095Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PreToolUse",
+      "event_type": "tool_call",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 196,
+        "output_bytes": 4,
+        "input_hash": "292b416f9aa01675f9a79a7a2b449fc03b21fe10c8bd9d8b819913cce09cad45",
+        "verification": "test",
+        "verification_scope": "cd_prefix",
+        "verification_outcome": "unknown"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Bash",
+      "correlation_id": "f665a0e19bd0437a4a61c7b67e380d54"
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 16,
+      "timestamp": "2026-10-03T11:26:20.215Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "PostToolUse",
+      "event_type": "tool_result",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 196,
+        "output_bytes": 251,
+        "input_hash": "292b416f9aa01675f9a79a7a2b449fc03b21fe10c8bd9d8b819913cce09cad45",
+        "output_hash": "be14fd4489994492728379c37f3f156267fad91b55e207c8d4e5e392e9b4b7a0",
+        "verification": "test",
+        "verification_scope": "cd_prefix",
+        "verification_outcome": "success"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b",
+      "tool_name": "Bash",
+      "correlation_id": "f665a0e19bd0437a4a61c7b67e380d54",
+      "outcome": "success",
+      "duration_ms": 730
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 17,
+      "timestamp": "2026-10-03T11:26:25.506Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "Stop",
+      "event_type": "stop",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 4,
+        "output_bytes": 558,
+        "background_count": 0,
+        "completion_marker_seen": false
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b"
+    },
+    {
+      "schema_version": "1.0.0",
+      "seq": 18,
+      "timestamp": "2026-10-03T11:26:25.862Z",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "workspace_id": "0861542d1fbd17cd10daef6b6790b26d",
+      "source": "claude-code",
+      "source_hook": "SessionEnd",
+      "event_type": "session",
+      "metadata": {
+        "capture_content": false,
+        "input_bytes": 4,
+        "output_bytes": 4,
+        "stop_reason": "other"
+      },
+      "prompt_id": "fa8967d1d12b5426a08808ca4e55268b"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01-1",
+      "type": "F01",
+      "severity": "info",
+      "event_seqs": [7, 11, 15],
+      "message": "Equivalent tool arguments repeated within the configured window.",
+      "evidence": {
+        "threshold": 3,
+        "window_ms": 120000,
+        "tool": "Bash"
+      }
+    }
+  ],
+  "metrics": {
+    "session_duration_ms": 35265,
+    "tool_call_count": 7,
+    "tool_success_count": 5,
+    "tool_failure_count": 2,
+    "tool_failure_rate": 0.2857142857142857,
+    "tool_cancelled_count": 0,
+    "tool_denied_count": 0,
+    "unpaired_call_count": 0,
+    "orphan_result_count": 0,
+    "duplicate_event_count": 0,
+    "bash_call_count": 3,
+    "edit_call_count": 2,
+    "read_call_count": 2,
+    "search_call_count": 0,
+    "tool_duration_p50_ms": 82,
+    "tool_duration_p95_ms": 2188,
+    "stop_count": 1,
+    "subagent_count": 0,
+    "compaction_count": 0,
+    "files_touched": 1
+  },
+  "verification": [
+    {
+      "event_seq": 8,
+      "kind": "test",
+      "outcome": "unknown"
+    },
+    {
+      "event_seq": 12,
+      "kind": "test",
+      "outcome": "unknown"
+    },
+    {
+      "event_seq": 16,
+      "kind": "test",
+      "outcome": "success"
+    }
+  ],
+  "workspace_diff": {
+    "available": true,
+    "attribution": "current workspace diff against HEAD; includes pre-existing and external changes",
+    "observed_at": "2026-10-03T11:38:15.345Z",
+    "files_touched": 3,
+    "lines_added": 235,
+    "lines_deleted": 106,
+    "test_files_changed": 0,
+    "source_files_changed": 1,
+    "binary_files": 0,
+    "untracked_file_count": 0,
+    "untracked_lines_included": false
+  },
+  "final_outcome": {
+    "status": "unknown",
+    "reason": "Public hook boundaries do not prove task completion"
+  },
+  "annotation": {
+    "human_labels": [],
+    "reviewed_by": null
+  },
+  "limitations": [
+    "Receipt sequence orders recorder writes, not concurrent tool execution. Timestamps are hook receipt times.",
+    "No hidden reasoning or transcripts are read. Stop is a turn boundary, not proof of task completion.",
+    "Observation can miss external/background tools, non-hooked changes and process termination.",
+    "Cancellation/denial are separate from execution failure. PermissionDenied covers auto mode only.",
+    "Verification recognition covers a conservative set of foreground shell commands; no assertion count or coverage is inferred."
+  ]
+}

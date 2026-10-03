@@ -1,0 +1,13 @@
+{
+  "name": "beibeihk-agent-evals",
+  "description": "Community plugins for evidence-grounded coding-agent reliability",
+  "owner": { "name": "Kun Huang", "url": "https://github.com/beibeihk" },
+  "plugins": [
+    {
+      "name": "agent-evals",
+      "source": "./",
+      "description": "Local reliability evidence for Claude Code public hooks",
+      "version": "0.1.0"
+    }
+  ]
+}

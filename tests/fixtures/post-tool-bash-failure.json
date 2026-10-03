@@ -1,0 +1,15 @@
+{
+  "session_id": "official-fixture",
+  "cwd": "/fixture",
+  "transcript_path": "/not-read.jsonl",
+  "permission_mode": "default",
+  "hook_event_name": "PostToolUseFailure",
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "node --test tests.mjs"
+  },
+  "tool_use_id": "toolu_fixture",
+  "error": "Exit code 1\nassertion failed",
+  "is_interrupt": false,
+  "duration_ms": 42
+}

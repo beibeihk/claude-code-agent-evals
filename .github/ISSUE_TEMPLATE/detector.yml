@@ -1,0 +1,13 @@
+name: Detector proposal
+description: Propose an evidence-grounded rule
+body:
+  - type: textarea
+    attributes:
+      label: Definition and public evidence
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Counterexample and false-positive risk
+    validations:
+      required: true

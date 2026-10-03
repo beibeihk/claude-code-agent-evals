@@ -1,0 +1,983 @@
+{
+  "recorded_at": "2026-10-03T11:38:14.993Z",
+  "provenance": "Real Claude Code client with user-authorized Kimi Coding endpoint; small isolated JavaScript bug-repair fixtures. Final tests executed independently. Detector labels are not human annotations.",
+  "tasks": 20,
+  "independently_passing": 20,
+  "human_reviewed": 0,
+  "precision": null,
+  "false_positive_rate": null,
+  "recall": null,
+  "records": [
+    {
+      "task": "sum",
+      "session_id": "262837bbb1f7fb014b3917b49d4e1c1e",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 30172,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 28489,
+        "tool_call_count": 5,
+        "tool_success_count": 5,
+        "tool_failure_count": 0,
+        "tool_failure_rate": 0,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 34,
+        "tool_duration_p95_ms": 1453,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "unknown"
+        }
+      ]
+    },
+    {
+      "task": "max",
+      "session_id": "14518b289983b8a85475faa0d2d73cf2",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 29289,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 27072,
+        "tool_call_count": 5,
+        "tool_success_count": 5,
+        "tool_failure_count": 0,
+        "tool_failure_rate": 0,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 47,
+        "tool_duration_p95_ms": 2805,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "unknown"
+        }
+      ]
+    },
+    {
+      "task": "clamp",
+      "session_id": "2f62aee90e686276a08fbbc26d446c09",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 43843,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 40647,
+        "tool_call_count": 5,
+        "tool_success_count": 4,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.2,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 90,
+        "tool_duration_p95_ms": 1946,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "isEven",
+      "session_id": "d9b89419b9a93e3addaab5805d8a8a2b",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 35654,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 33492,
+        "tool_call_count": 5,
+        "tool_success_count": 4,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.2,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 35,
+        "tool_duration_p95_ms": 1733,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "factorial",
+      "session_id": "5ebe79636ff9d1a48c161d413da41018",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 30365,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 13,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 28284,
+        "tool_call_count": 4,
+        "tool_success_count": 5,
+        "tool_failure_count": 0,
+        "tool_failure_rate": 0,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 1,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 1,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 46,
+        "tool_duration_p95_ms": 1752,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 7,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 11,
+          "kind": "test",
+          "outcome": "unknown"
+        }
+      ]
+    },
+    {
+      "task": "reverse",
+      "session_id": "d62289529e662a7b761e96d24c40c1f1",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 35198,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 32984,
+        "tool_call_count": 5,
+        "tool_success_count": 4,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.2,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 34,
+        "tool_duration_p95_ms": 3052,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "unique",
+      "session_id": "befc5f75215bbea618d9b0e05910df33",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 23680,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 21664,
+        "tool_call_count": 5,
+        "tool_success_count": 4,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.2,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 95,
+        "tool_duration_p95_ms": 1996,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "average",
+      "session_id": "4581123141ff268dea431c72a2b1446c",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 37234,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 18,
+      "findings": [
+        {
+          "type": "F01",
+          "severity": "info",
+          "event_seqs": [7, 11, 15]
+        }
+      ],
+      "metrics": {
+        "session_duration_ms": 35265,
+        "tool_call_count": 7,
+        "tool_success_count": 5,
+        "tool_failure_count": 2,
+        "tool_failure_rate": 0.2857142857142857,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 3,
+        "edit_call_count": 2,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 82,
+        "tool_duration_p95_ms": 2188,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 16,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "capitalize",
+      "session_id": "3ac706f7c392f4d10eaa7be801eca0a3",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 48039,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 45088,
+        "tool_call_count": 5,
+        "tool_success_count": 5,
+        "tool_failure_count": 0,
+        "tool_failure_rate": 0,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 86,
+        "tool_duration_p95_ms": 6450,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "unknown"
+        }
+      ]
+    },
+    {
+      "task": "count",
+      "session_id": "066d723ec3f4772f95a226c8ede553d4",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 37475,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 32875,
+        "tool_call_count": 5,
+        "tool_success_count": 4,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.2,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 91,
+        "tool_duration_p95_ms": 4945,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "chunk",
+      "session_id": "669b4272a172a73d21e598b0de61d7d0",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 44157,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 16,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 40271,
+        "tool_call_count": 6,
+        "tool_success_count": 6,
+        "tool_failure_count": 0,
+        "tool_failure_rate": 0,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 1,
+        "tool_duration_p50_ms": 69,
+        "tool_duration_p95_ms": 2538,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 10,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 14,
+          "kind": "test",
+          "outcome": "unknown"
+        }
+      ]
+    },
+    {
+      "task": "range",
+      "session_id": "dec125c036890f8dc9599b12cccfd39b",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 25720,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 23267,
+        "tool_call_count": 5,
+        "tool_success_count": 4,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.2,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 59,
+        "tool_duration_p95_ms": 3182,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "median",
+      "session_id": "1e1b1250e578455da01b2fff4ccbc524",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 32077,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 16,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 29613,
+        "tool_call_count": 6,
+        "tool_success_count": 5,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.16666666666666666,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 3,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 39,
+        "tool_duration_p95_ms": 2448,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 10,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 14,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "slug",
+      "session_id": "6da5eb154109b21945b91f5ae120bd24",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 36953,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 34389,
+        "tool_call_count": 5,
+        "tool_success_count": 4,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.2,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 74,
+        "tool_duration_p95_ms": 3069,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "intersection",
+      "session_id": "5c751108d542aaa5031c7e8214849242",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 31956,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 29116,
+        "tool_call_count": 5,
+        "tool_success_count": 4,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.2,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 91,
+        "tool_duration_p95_ms": 2762,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "isPalindrome",
+      "session_id": "a3dab32c06ee9721aabbe6065613bf9f",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 34634,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 31333,
+        "tool_call_count": 5,
+        "tool_success_count": 5,
+        "tool_failure_count": 0,
+        "tool_failure_rate": 0,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 119,
+        "tool_duration_p95_ms": 3835,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "unknown"
+        }
+      ]
+    },
+    {
+      "task": "zip",
+      "session_id": "cb1da40723833488e3f770a722d850e8",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 33721,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 16,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 31172,
+        "tool_call_count": 6,
+        "tool_success_count": 6,
+        "tool_failure_count": 0,
+        "tool_failure_rate": 0,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 1,
+        "tool_duration_p50_ms": 80,
+        "tool_duration_p95_ms": 2517,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 10,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 14,
+          "kind": "test",
+          "outcome": "unknown"
+        }
+      ]
+    },
+    {
+      "task": "compact",
+      "session_id": "c6619530a7e9b1d0cfec67c7b6799c86",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 36233,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 14,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 34047,
+        "tool_call_count": 5,
+        "tool_success_count": 4,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.2,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 82,
+        "tool_duration_p95_ms": 3260,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 8,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 12,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "sumSquares",
+      "session_id": "fc73d6ab6ed2fdfb857694638f9349d3",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 44905,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 16,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 42178,
+        "tool_call_count": 6,
+        "tool_success_count": 5,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.16666666666666666,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 2,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 1,
+        "tool_duration_p50_ms": 71,
+        "tool_duration_p95_ms": 3206,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 10,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 14,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    },
+    {
+      "task": "degrees",
+      "session_id": "e5c0008d25203c8c1e57558fa2ad7eaa",
+      "provider": "kimi",
+      "requested_model": "kimi-for-coding",
+      "reported_models": ["kimi-for-coding"],
+      "claude_version": "2.1.288 (Claude Code)",
+      "bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+      "elapsed_ms": 33046,
+      "agent_exit": 0,
+      "independent_test_exit": 0,
+      "observed_events": 16,
+      "findings": [],
+      "metrics": {
+        "session_duration_ms": 30593,
+        "tool_call_count": 6,
+        "tool_success_count": 5,
+        "tool_failure_count": 1,
+        "tool_failure_rate": 0.16666666666666666,
+        "tool_cancelled_count": 0,
+        "tool_denied_count": 0,
+        "unpaired_call_count": 0,
+        "orphan_result_count": 0,
+        "duplicate_event_count": 0,
+        "bash_call_count": 3,
+        "edit_call_count": 1,
+        "read_call_count": 2,
+        "search_call_count": 0,
+        "tool_duration_p50_ms": 191,
+        "tool_duration_p95_ms": 2639,
+        "stop_count": 1,
+        "subagent_count": 0,
+        "compaction_count": 0,
+        "files_touched": 1
+      },
+      "verification": [
+        {
+          "event_seq": 10,
+          "kind": "test",
+          "outcome": "unknown"
+        },
+        {
+          "event_seq": 14,
+          "kind": "test",
+          "outcome": "success"
+        }
+      ]
+    }
+  ]
+}

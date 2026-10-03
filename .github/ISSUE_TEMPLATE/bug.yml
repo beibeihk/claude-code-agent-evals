@@ -1,0 +1,18 @@
+name: Bug report
+description: Report an observable reliability or plugin defect
+body:
+  - type: textarea
+    attributes:
+      label: Reproduction
+      description: Claude version, Node version, OS, configuration and a synthetic/minimal safe fixture. Never attach secrets or full transcripts.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Redacted evidence
+      description: Event sequences, metadata-only export and recorder errors if available.

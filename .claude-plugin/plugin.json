@@ -1,0 +1,10 @@
+{
+  "name": "agent-evals",
+  "version": "0.1.0",
+  "description": "Community plugin for local, privacy-first Claude Code reliability evidence and eval export",
+  "author": { "name": "Kun Huang", "url": "https://github.com/beibeihk" },
+  "homepage": "https://github.com/beibeihk/claude-code-agent-evals",
+  "repository": "https://github.com/beibeihk/claude-code-agent-evals",
+  "license": "MIT",
+  "keywords": ["agent-evals", "agent-reliability", "claude-code"]
+}

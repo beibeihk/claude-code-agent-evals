@@ -1,0 +1,36 @@
+name: CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm test
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm run validate
+      - run: npm run format:check
+      - run: git diff --exit-code -- bin
+      - run: npm run evaluate
+  manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install official Claude Code validator
+        run: |
+          curl -fsSL https://claude.ai/install.sh | bash -s 2.1.288
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+      - run: claude plugin validate .claude-plugin/plugin.json --strict
+      - run: claude plugin validate .claude-plugin/marketplace.json --strict

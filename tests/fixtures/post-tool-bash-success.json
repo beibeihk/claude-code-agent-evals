@@ -1,0 +1,18 @@
+{
+  "session_id": "official-fixture",
+  "cwd": "/fixture",
+  "transcript_path": "/not-read.jsonl",
+  "permission_mode": "default",
+  "hook_event_name": "PostToolUse",
+  "tool_name": "Bash",
+  "tool_input": {
+    "command": "node --test tests.mjs"
+  },
+  "tool_response": {
+    "stdout": "2 tests passed",
+    "stderr": "",
+    "interrupted": false
+  },
+  "tool_use_id": "toolu_fixture",
+  "duration_ms": 40
+}

@@ -1,0 +1,74 @@
+Recorded replay: completed average bug repair with Claude Code + Kimi Coding.
+All tests pass.
+
+**The bug:** `average` in `src/task.mjs` returned the raw sum from `reduce` without dividing by the array length, so `average([2,4])` returned `6` instead of `3`.
+
+**Fix** (one line, tests untouched):
+```js
+export const average=xs=>xs.length?xs.reduce((a,b)=>a+b,0)/xs.length:0;
+```
+- Divide the sum by `xs.length` to compute the mean.
+- Return `0` for an empty array (avoids `NaN` from `0/0`).
+
+**Test results** (`node --test tests.mjs`):
+- Before fix: 1 pass, 1 fail (`case 0`: got 6, expected 3)
+- After fix: 2 pass, 0 fail
+$ node --test tests.mjs
+✔ case 0 (1.2002ms)
+✔ case 1 (0.1772ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 152.477
+$ node <plugin>/bin/agent-evals.mjs report --session <recorded-session> --git
+{
+  "paths": [
+    "<local-plugin-data>/artifacts/4581123141ff268dea431c72a2b1446c/report.html",
+    "<local-plugin-data>/artifacts/4581123141ff268dea431c72a2b1446c/report.md",
+    "<local-plugin-data>/artifacts/4581123141ff268dea431c72a2b1446c/trace.json"
+  ],
+  "findings": [
+    {
+      "id": "F01-1",
+      "type": "F01",
+      "severity": "info",
+      "event_seqs": [
+        7,
+        11,
+        15
+      ],
+      "message": "Equivalent tool arguments repeated within the configured window.",
+      "evidence": {
+        "threshold": 3,
+        "window_ms": 120000,
+        "tool": "Bash"
+      }
+    }
+  ],
+  "metrics": {
+    "session_duration_ms": 589827,
+    "tool_call_count": 9,
+    "tool_success_count": 6,
+    "tool_failure_count": 2,
+    "tool_failure_rate": 0.25,
+    "tool_cancelled_count": 0,
+    "tool_denied_count": 0,
+    "unpaired_call_count": 1,
+    "orphan_result_count": 0,
+    "duplicate_event_count": 0,
+    "bash_call_count": 5,
+    "edit_call_count": 2,
+    "read_call_count": 2,
+    "search_call_count": 0,
+    "tool_duration_p50_ms": 82,
+    "tool_duration_p95_ms": 2912,
+    "stop_count": 3,
+    "subagent_count": 0,
+    "compaction_count": 0,
+    "files_touched": 1
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "measured_at": "2026-10-03T11:44:46.8206427Z",
+  "claude_version": "2.1.288",
+  "node_version": "v24.12.0",
+  "os": "Windows 11 x64",
+  "released_bundle_sha256": "4cd3ce037e930a37d3d1d9273394ed4627841e8da7a0e79c5a9202aefc64b6f8",
+  "unit_tests": {
+    "skipped": 0,
+    "failed": 0,
+    "passed": 31
+  },
+  "rule_conformance": {
+    "human_annotations": 0,
+    "exact_matches": 50,
+    "scenarios": 50
+  },
+  "real_tasks": {
+    "provider": "Kimi Coding",
+    "tested_bundle_sha256": "4fb06dc0b92a6410647761a2bdb63c0383e521199633522a4e84b7f30ad82eca",
+    "note": "The 20-task batch used the recorded candidate build. Subsequent directory-option and Windows path-normalization fixes are covered by automated regressions and a real report-skill invocation on the released build.",
+    "reported_models": ["kimi-for-coding"],
+    "requested_model": "kimi-for-coding",
+    "distinct_tasks": 20,
+    "independent_final_test_passes": 20
+  },
+  "skill_report": {
+    "artifact_exists": true,
+    "elapsed_ms": 20849,
+    "cli_exit": 0,
+    "provider_models": ["kimi-for-coding"],
+    "is_error": false
+  },
+  "checks": {
+    "plugin_dev_agent_validator": "passed",
+    "plugin_structure": "passed",
+    "local_scope_uninstall_keep_data": "passed",
+    "local_marketplace_install": "passed",
+    "npm_audit": "0 vulnerabilities",
+    "official_plugin_manifest": "passed",
+    "credential_content_scan": "0 matches",
+    "typecheck": "passed",
+    "plugin_dev_hook_validator": "passed with four current events absent from the legacy allowlist; jq CRLF normalized",
+    "official_marketplace_manifest": "passed",
+    "lint": "passed"
+  },
+  "human_evaluation": {
+    "false_positive_rate": null,
+    "status": "Pending; user explicitly requested release without completed human labels.",
+    "reviewed": 0,
+    "recall": null,
+    "precision": null
+  }
+}
