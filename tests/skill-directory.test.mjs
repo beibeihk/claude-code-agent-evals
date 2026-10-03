@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
-import { mkdtempSync } from "node:fs";
+import { mkdtempSync, realpathSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import {
@@ -10,8 +10,12 @@ import {
   identity,
 } from "../bin/library.mjs";
 test("skill directory option works without shell assignment and honors explicit override", () => {
-  const plugin = mkdtempSync(join(tmpdir(), "agent-evals-plugin-"));
-  const override = mkdtempSync(join(tmpdir(), "agent-evals-override-"));
+  const plugin = mkdtempSync(
+    join(realpathSync(tmpdir()), "agent-evals-plugin-"),
+  );
+  const override = mkdtempSync(
+    join(realpathSync(tmpdir()), "agent-evals-override-"),
+  );
   const env = { ...process.env };
   delete env.AGENT_EVALS_DATA_DIR;
   delete env.CLAUDE_PLUGIN_DATA;

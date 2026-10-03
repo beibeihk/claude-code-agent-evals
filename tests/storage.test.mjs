@@ -2,6 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
   mkdtempSync,
+  realpathSync,
   readFileSync,
   writeFileSync,
   symlinkSync,
@@ -23,7 +24,8 @@ import {
 } from "../bin/library.mjs";
 import { events, start, stop, base } from "./helpers.mjs";
 const cli = resolve("bin/agent-evals.mjs");
-const temp = () => mkdtempSync(join(tmpdir(), "agent-evals-test-"));
+const temp = () =>
+  mkdtempSync(join(realpathSync(tmpdir()), "agent-evals-test-"));
 test("60 concurrent writes have unique contiguous sequence and intact lines", async () => {
   const root = temp();
   const event = events([start])[0];

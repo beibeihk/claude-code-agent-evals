@@ -1,5 +1,11 @@
 import { performance } from "node:perf_hooks";
-import { mkdirSync, mkdtempSync, statSync, writeFileSync } from "node:fs";
+import {
+  mkdirSync,
+  mkdtempSync,
+  realpathSync,
+  statSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir, platform, release, arch } from "node:os";
 import { join, resolve } from "node:path";
 import { spawnSync } from "node:child_process";
@@ -12,7 +18,7 @@ import {
   html,
 } from "../bin/library.mjs";
 const key = Buffer.alloc(32, 5);
-const root = mkdtempSync(join(tmpdir(), "agent-evals-bench-"));
+const root = mkdtempSync(join(realpathSync(tmpdir()), "agent-evals-bench-"));
 const results = [];
 const percentile = (values, q) =>
   [...values].sort((a, b) => a - b)[
